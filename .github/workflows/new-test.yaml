@@ -1,0 +1,4 @@
+name: This is new test
+on:
+  push:
+    branches: ["main"]
