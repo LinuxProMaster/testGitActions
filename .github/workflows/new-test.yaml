@@ -1,4 +1,4 @@
-name: This is new test
+name: This is new web_page
 on:
   push:
     branches: [ master ]
@@ -7,6 +7,10 @@ on:
 jobs:
   new_build_job:
     runs-on: ubuntu-latest
-      steps:
-        - uses:
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install nginx
+        run: apt update -y && apt install nginx -y
+      - name: Copy index.html
+        run: cp index.html /var/www/index.html
   
