@@ -13,4 +13,6 @@ jobs:
         run: sudo apt-get update -y && sudo apt-get install nginx -y
       - name: Copy index.html
         run: sudo cp index.html /var/www/index.html
+      - name: test nginx
+        run: sudo curl localhost
   
