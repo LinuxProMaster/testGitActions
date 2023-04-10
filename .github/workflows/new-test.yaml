@@ -1,9 +1,9 @@
 name: This is new web_page
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   new_build_job:
     runs-on: ubuntu-latest
