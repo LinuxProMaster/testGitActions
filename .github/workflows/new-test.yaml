@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install nginx
-        run: apt update -y && apt install nginx -y
+        run: apt-get update -y && apt-get install nginx -y
       - name: Copy index.html
         run: cp index.html /var/www/index.html
   
