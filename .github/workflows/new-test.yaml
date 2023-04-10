@@ -2,6 +2,8 @@ name: This is new web_page
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   new_build_job:
     runs-on: ubuntu-latest
