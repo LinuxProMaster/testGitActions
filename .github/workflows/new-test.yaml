@@ -12,5 +12,5 @@ jobs:
       - name: Install nginx
         run: sudo apt-get update -y && sudo apt-get install nginx -y
       - name: Copy index.html
-        run: cp index.html /var/www/index.html
+        run: sudo cp index.html /var/www/index.html
   
